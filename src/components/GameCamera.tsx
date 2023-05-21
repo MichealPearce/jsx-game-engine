@@ -30,16 +30,5 @@ export function GameCamera() {
 		render.restore()
 	})
 
-	return [
-		<Moveable
-			cords={cords}
-			keys={{
-				up: 'ArrowDown',
-				down: 'ArrowUp',
-				left: 'ArrowRight',
-				right: 'ArrowLeft',
-			}}
-		/>,
-		node.children,
-	]
+	return [<Moveable cords={cords} />, node.children]
 }
